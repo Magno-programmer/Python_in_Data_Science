@@ -1,3 +1,8 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/vcs.xml
+/modules.xml
+/misc.xml
+/Python_in_Data_Science.iml
+inspectionProfiles/
