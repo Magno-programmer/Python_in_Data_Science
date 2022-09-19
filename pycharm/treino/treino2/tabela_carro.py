@@ -1,11 +1,12 @@
 import numpy as np
-import matplotlib.pyplot as plt
 
+# usando a biblioteca numpy para pegar arquivo txt
 km = np.loadtxt("./carros/carros-km.txt")
+anos = np.loadtxt("./carros/carros-anos.txt")
 
-kms = []
+# Tirando média com os arquivos usados
+km_media = km / (2022 - anos)
 
-for km in range(10):
-    kms.append(km)
-
-print(km)
+# Olhando a média
+print(' '*10, '-'*10, 'Média dos carros', '-'*10)
+print(km_media)
