@@ -16,5 +16,7 @@ square_in_one_line = [x ** 2 for x in range(10)]
 print(square_in_one_line)
 
 
+""" ******* removing duplicates ******** """
+# to make it, I can use the method 'set'
 
 
