@@ -17,6 +17,23 @@ print(square_in_one_line)
 
 
 """ ******* removing duplicates ******** """
-# to make it, I can use the method 'set'
 
+# to make it, I can use the method 'set'
+names_of_subscription = ["carlos", "luciana", "gustavo", "alice", "joao",
+                         "andre", "augusto", "jorge", "heloisa", "camila",
+                         "george", "anderson", "benir", "benjamin", "paula",
+                         "leo", "lucas", "Jersica", "aparecida", "maria"]
+
+names_permitted = ["joao", "Alexandro", "Joasir", "John", "carlos", "luciana",
+                   "alencar", "aparecida", "mateus", "thiago", "bernardo", "leo"]
+
+# if I concatenate lists going to show all elements inclusive duplicate
+every_names_with_duplicate = names_of_subscription + names_permitted
+print(every_names_with_duplicate)
+print("\nall element counted in list with duplicate: ", len(every_names_with_duplicate), "\n\n")
+
+# but if I put this list in method 'set', going to be removed every duplicate name
+every_names_without_duplicate = list(set(names_of_subscription + names_permitted))
+print(every_names_without_duplicate)
+print("\nall element counted in list without duplicate: ", len(every_names_without_duplicate))
 
