@@ -37,3 +37,48 @@ every_names_without_duplicate = list(set(names_of_subscription + names_permitted
 print(every_names_without_duplicate)
 print("\nall element counted in list without duplicate: ", len(every_names_without_duplicate))
 
+""" ******* 'for' inside of 'for' ******** """
+
+names = [["carlos", "luciana", "gustavo", "alice", "joao",
+         "andre", "augusto", "jorge", "heloisa", "camila",
+         "george", "anderson", "benir", "benjamin", "paula",
+         "leo", "lucas", "Jersica", "aparecida", "maria"],
+         ["joao", "Alexandro", "Joasir", "John", "carlos",
+          "luciana", "alencar", "aparecida", "mateus", "thiago",
+          "bernardo", "leo"]]
+
+# This is a normal looping 'for', where there is just one command
+# This 'for' going to print the two list on separated form
+for _list in names:
+    print(_list)
+
+# In this case, there are two for, one inside other that will print
+# the list complete
+for _list in names:
+    for all_names_common in _list:
+        print(all_names_common)
+
+# When I make a list to put the two list together I am creating a new list
+all_names_list = []
+
+for _list in names:
+    for all_names_common in _list:
+        all_names_list.append(all_names_common)
+
+print(all_names_list)
+
+
+# # this case I can to use also the set to remove duplicate
+accessed = set(all_names_list)
+print(accessed)
+
+# # If I to want change it to list I can put function 'list'
+list_of_accessed = list(set(all_names_list))
+print(list_of_accessed)
+
+# now you can to know if there is less element than another list
+print(all_names_list)
+print("The length of the list with duplicate is: ", len(all_names_list))
+print("\n", list_of_accessed)
+print("The length of the list without duplicate is: ", len(list_of_accessed))
+
