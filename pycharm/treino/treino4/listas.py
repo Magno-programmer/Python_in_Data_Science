@@ -1,10 +1,10 @@
-# names
+# names list
 names = ["carlos", "luciana", "gustavo", "alice", "joao",
          "andre", "augusto", "jorge", "heloisa", "camila",
          "george", "anderson", "benir", "benjamin", "paula",
          "leo", "lucas", "jersica", "aparecida", "maria"]
 
-""" tests """
+# tests
 x = "carol"
 t = "joaquim"
 h = "jo"
@@ -31,6 +31,7 @@ n = 'hugo'
 
 
 '''
+                   ******* ATTENTION ! *******
  change the element i until j jumping k elements in list for each element n
  if the difference from i through j equal length of n
 '''
