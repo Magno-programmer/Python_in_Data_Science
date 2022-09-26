@@ -22,7 +22,7 @@ y = times_I_can_go_out
 plt.figure(figsize=(12, 4))
 
 plt.plot(x, y, marker='o')
-plt.title('Times that I can to go out')
+plt.title('Times that I can to go out of home')
 plt.yticks(range(0, 5))
 plt.grid()
 plt.show()
