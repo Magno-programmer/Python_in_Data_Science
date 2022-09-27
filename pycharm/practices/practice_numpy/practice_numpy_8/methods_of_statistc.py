@@ -1,8 +1,8 @@
 import numpy as np
 
-price_cars = np.loadtxt('../../cars/cars-prices.txt', dtype=float)
-years_cars = np.loadtxt('../../cars/cars-years.txt', dtype=int)
-km_cars = np.loadtxt('../../cars/cars-km.txt', dtype=float)
+price_cars = np.loadtxt('../cars/cars-prices.txt', dtype=float)
+years_cars = np.loadtxt('../cars/cars-years.txt', dtype=int)
+km_cars = np.loadtxt('../cars/cars-km.txt', dtype=float)
 
 
 """ More some methods in numpy """
