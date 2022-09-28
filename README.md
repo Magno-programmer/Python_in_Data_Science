@@ -1,3 +1,3 @@
 # Python_in_data_science
 
-  precisei apagar a pasta que criei dia 13 e 14 de setembro para refazer, mas essa aqui é a mesma!
+  I needed erase the past I created in 13 and 14 of september to redo, but this is the same!
