@@ -1,19 +1,16 @@
 import numpy as np
+import pandas as pd
 
-names_cars = np.loadtxt('cars/cars-names.txt', dtype=str)
-price_cars = np.loadtxt('cars/cars-prices.txt', dtype=float)
-years_cars = np.loadtxt('cars/cars-years.txt', dtype=int)
-km_cars = np.loadtxt('cars/cars-km.txt', dtype=float)
-zero_km_cars = np.loadtxt('cars/cars-zero-km.txt', dtype=int)
+pd.set_option('Display.max_rows', None)
+pd.set_option('Display.max_columns', None)
+pd.set_option('expand_frame_repr', None)
 
-info_graph = np.column_stack((names_cars, price_cars, years_cars, km_cars, zero_km_cars))
-print(info_graph)
-
-
-
-
-
-
-
+cars = pd.read_csv('cars/cars.csv', sep=';', index_col=0)
+df = pd.DataFrame(cars)
+# print(df)
+# print(df.info())
+df['zero_km'] = df['zero_km'].astype(bool)
+# print(df)
+print(df.query('zero_km == True & preço <= 70000'), '\n')
 
 

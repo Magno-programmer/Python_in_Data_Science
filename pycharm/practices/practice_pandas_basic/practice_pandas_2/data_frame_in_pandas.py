@@ -55,7 +55,7 @@ pd.set_option('expand_frame_repr', False)
 """the default of the max rows and columns is 10"""
 
 # I can pick up excel table and show here with 'read_csv', for no give an error
-# you need pass a 'sep' that is the thing that you used to separate columns
+# you need pass a 'sep' that is the thing that you used to separate columns'
 # data_set_table = pd.read_csv('../data/db.csv', sep=';')
 # print(data_set_table)
 
